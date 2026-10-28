@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Sahiti Bommareddy — Software Engineer</title>
+  <style>
+    :root { --ink:#14232b; --muted:#52616a; --accent:#08766b; --rule:#cdd8dc; }
+    * { box-sizing:border-box; }
+    html { font-size:10.1pt; }
+    body { margin:0; color:var(--ink); background:#eef1f2; font-family:Arial, Helvetica, sans-serif; line-height:1.31; }
+    main { width:8.5in; min-height:11in; margin:24px auto; padding:.43in .52in; background:white; box-shadow:0 4px 24px #24343b26; }
+    header { border-bottom:2px solid var(--accent); padding-bottom:8px; margin-bottom:9px; }
+    h1 { margin:0 0 2px; font-size:24pt; letter-spacing:-.45px; }
+    .identity { color:var(--accent); font-weight:700; font-size:11.5pt; }
+    .contact { margin-top:4px; color:var(--muted); font-size:9.1pt; }
+    a { color:inherit; text-decoration:none; }
+    h2 { margin:11px 0 5px; padding-bottom:2px; border-bottom:1px solid var(--rule); color:var(--accent); font-size:11.2pt; letter-spacing:.7px; text-transform:uppercase; }
+    p { margin:0 0 5px; }
+    .summary { font-size:10pt; }
+    .role { margin-top:7px; break-inside:avoid; }
+    .page-break { break-before:page; padding-top:.32in; }
+    .role:first-of-type { margin-top:0; }
+    .role-head { display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+    .role-head strong { font-size:10.5pt; }
+    .place { font-weight:700; }
+    .dates { color:var(--muted); white-space:nowrap; font-size:9.3pt; }
+    .context { color:var(--muted); font-size:9.2pt; margin-top:1px; }
+    ul { margin:4px 0 0 17px; padding:0; }
+    li { margin:0 0 3.3px; padding-left:1px; }
+    .skills { display:grid; grid-template-columns:120px 1fr; gap:3px 9px; font-size:9.5pt; }
+    .skills strong { color:var(--ink); }
+    .compact { font-size:9.4pt; }
+    .selected { font-weight:700; }
+    .evidence a { color:var(--accent); text-decoration:underline; text-decoration-thickness:.5px; text-underline-offset:1px; }
+    footer { margin-top:8px; color:var(--muted); font-size:8.4pt; text-align:center; }
+    @page { size:letter; margin:0; }
+    @media print {
+      body { background:white; }
+      main { margin:0; box-shadow:none; }
+      a { text-decoration:none; }
+    }
+    @media (max-width:850px) {
+      main { width:100%; min-height:auto; margin:0; padding:28px 24px; box-shadow:none; }
+      .role-head { display:block; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sahiti Bommareddy</h1>
+    <div class="identity">AI Agent Platform &amp; Distributed Systems Engineer</div>
+    <div class="contact">
+      <a href="mailto:b.sahiti@gmail.com">b.sahiti@gmail.com</a> ·
+      <a href="tel:+14047861767">404-786-1767</a> ·
+      <a href="https://www.linkedin.com/in/bsahiti/">linkedin.com/in/bsahiti</a> ·
+      <a href="https://github.com/b-sahiti">github.com/b-sahiti</a> ·
+      <a href="https://b-sahiti.github.io">b-sahiti.github.io</a> ·
+      Mountain View, CA
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">AI agent-platform architect with deep distributed-systems expertise, translating customer needs into reusable foundations for building, orchestrating, evaluating, and safely operating AI agents in production. At Ema, owns major platform areas that let agents connect to and act across enterprise systems and enable no-code creation of validated agent capabilities. Ph.D. in real-time Byzantine-resilient distributed systems.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="role">
+      <div class="role-head"><div><span class="place">Ema</span> — <strong>Software Engineer</strong></div><div class="dates">Feb 2025–Present</div></div>
+      <div class="context">Core agent platform: automated capability creation, integrations, agent runtime, workflows, governed execution, and reliability</div>
+      <ul>
+        <li>Own Ema's integrations and external-actions platform end to end and designed the agent that automatically turns API specifications, documentation, MCP servers, and other system descriptions into validated, test-run, publishable tools—moving integration delivery from weeks of engineering toward minutes without hand-written integration code.</li>
+        <li>Designed Ema's multi-tool planning and execution agent and drove shared agent-harness capabilities for connecting to and acting across external systems, including planning and replanning, caller-scoped tools, dependency resolution, validation, model selection, multi-model evaluation, safeguards, and configurable human approval.</li>
+        <li>Designed major parts of the governed action and tool-execution platform, including isolated script execution using Go services, containerized V8 isolates, sandboxing, network restrictions, identity boundaries, credential isolation, recovery, and per-call auditability.</li>
+        <li>Owned event-driven and long-running agent execution across schedules, webhooks, polling, static and dynamically planned workflows, delegation, human-in-the-loop pause/resume, durable state, deduplication, re-drive, and partial-failure recovery.</li>
+        <li>Designed MCP support for agents and Ema's no-code agent builder; drove migration of the connector catalog to Ema-native capabilities and established CI/CD, lifecycle, publication, authentication, permission, and quality controls that maintain and distribute it.</li>
+        <li>Set technical direction through architecture reviews, closely mentored three engineers, and coordinated delivery across more than 15 geographically distributed engineers.</li>
+        <li>Developed production observability and structured failure attribution across agent execution, reducing detection and resolution time by more than 70%.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div><span class="place">Johns Hopkins University</span> — <strong>Doctoral Researcher, Distributed Systems and Networks Lab</strong></div><div class="dates">2019–2025</div></div>
+      <ul>
+        <li>Designed and built real-time distributed systems for critical-infrastructure protection, including power-grid substations, combining Byzantine fault-tolerant replication, resilient networking, and proactive recovery to preserve correct operation under compromised components and network attacks.</li>
+        <li>Developed cybersecurity and machine-learning capabilities for critical infrastructure, including network intrusion detection and situational awareness integrated with resilient control systems.</li>
+        <li>Developed methods for analyzing and tolerating compound cyber and physical threats to critical infrastructure; research received the IEEE SRDS 2024 Best Paper Award.</li>
+        <li>Shipped open-source resilient systems including Spire, Prime, and Spines, with work delivered for deployment at Pacific Northwest National Laboratory (PNNL) and major power-grid vendors including GE, Siemens, and Hitachi Energy.</li>
+      </ul>
+    </div>
+
+    <div class="role page-break">
+      <div class="role-head"><div><span class="place">Aktrix Technologies</span> — <strong>Software Engineer</strong></div><div class="dates">2013–2016</div></div>
+      <ul>
+        <li>Led and expanded a team of nine performance engineers, owning test strategy, resource coordination, delivery risk, and training across client engagements.</li>
+        <li>Pioneered an automated monitoring and analysis platform for multi-cloud environments, combining operational data pipelines with machine-learning-based load and resource prediction to reduce root-cause analysis effort and improve latency by approximately 2–5× across projects.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div><span class="place">Deloitte</span> — <strong>Performance Engineering Analyst</strong></div><div class="dates">2011–2012</div></div>
+      <ul>
+        <li>Led performance testing across seven projects and developed approximately 40 performance test plans, partnering with application, database, and infrastructure teams to diagnose bottlenecks in geo-distributed systems.</li>
+        <li>Optimized transaction latency to meet service-level objectives through traffic, CPU, memory, and utilization analysis; received an Applause Award for performance optimization and root-cause analysis.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <strong>Agent architecture</strong><span>Agent building, agent harness, multi-tool planning and execution, orchestration and delegation, dynamic replanning, skills and context, human-in-the-loop</span>
+      <strong>Tools &amp; evaluation</strong><span>Automated no-code integration generation, MCP, controlled tool execution, model selection, multi-model and agent evaluation, dependency validation, load testing</span>
+      <strong>Distributed execution</strong><span>Workflow runtimes, durable state, event-driven systems, scheduling, webhooks, polling, idempotency, re-drive, partial-failure recovery, Byzantine resilience</span>
+      <strong>Security &amp; governance</strong><span>Containerized V8 isolation, sandboxing, network restrictions, enterprise authentication, OAuth2, API keys, mTLS, credential lifecycle, permission scoping, approval gates, audit</span>
+      <strong>Production systems</strong><span>Python, Go, TypeScript, C, Java, PostgreSQL, REST/OpenAPI, Prometheus, Grafana, ClickHouse, CI/CD, incident response</span>
+      <strong>Applied ML</strong><span>PyTorch, TensorFlow, Hugging Face, intrusion detection, time-series and regression models, evaluation and regression analysis</span>
+    </div>
+  </section>
+
+  <section class="compact">
+    <h2>Education</h2>
+    <p><strong>Ph.D., Computer Science</strong>, Johns Hopkins University, 2025 · Advisor: Yair Amir</p>
+    <p><strong>M.S., Computer Science</strong>, Duke University, 2019</p>
+    <p><strong>B.Tech., Electronics &amp; Communication Engineering</strong>, Jawaharlal Nehru Technological University, 2011</p>
+  </section>
+
+  <section class="compact evidence">
+    <h2>Selected Research &amp; Open Source</h2>
+    <p><strong>Real-time Byzantine resilience.</strong> Built intrusion-tolerant infrastructure for protecting critical systems, including power-grid substations, combining proactive recovery, diverse replicas, and resilient networking with strict sub-cycle latency.</p>
+    <p><strong>Compound-threat resilience.</strong> Developed methods for analyzing and tolerating combined cyberattacks and severe physical disruption in critical-infrastructure control systems.</p>
+    <p><strong>Selected publications.</strong> <a href="https://jhu-dsn.github.io/papers/srds24_compoundThreats.pdf">IEEE SRDS 2024</a>; <a href="https://jhu-dsn.github.io/papers/ByzSec_ieee.pdf">IEEE PESGM 2024 (ByzSec)</a>; <a href="https://lab-dsn.github.io/papers/RealTime.pdf">IEEE SRDS 2022</a>; <a href="https://lab-dsn.github.io/papers/RTbyz_ERSA2022.pdf">ERSA at IEEE RTSS 2022</a>; <a href="https://lab-dsn.github.io/papers/dcds2022.pdf">DCDS at IEEE/IFIP DSN</a>.</p>
+    <p><strong>Open-source systems.</strong> <a href="https://github.com/spire-resilient-systems/spire">Spire</a>—intrusion-tolerant SCADA; <a href="https://github.com/jhu-dsn/prime">Prime</a>—Byzantine fault-tolerant replication with performance guarantees; <a href="https://github.com/spines-org/spines">Spines</a>—resilient overlay messaging.</p>
+  </section>
+
+  <footer>Full publications, open-source systems, and technical case studies: b-sahiti.github.io</footer>
+</main>
+</body>
+</html>

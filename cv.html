@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sahiti Bommareddy — Curriculum Vitae</title>
+  <style>
+    :root { --ink:#17252d; --muted:#4f6169; --accent:#007f73; --rule:#b6c8cc; }
+    * { box-sizing:border-box; }
+    @page { size:Letter; margin:0.48in 0.55in; }
+    body { margin:0; background:#eef2f3; color:var(--ink); font-family:Arial, Helvetica, sans-serif; font-size:9.3pt; line-height:1.26; }
+    main { width:8.5in; margin:20px auto; padding:0.48in 0.55in; background:#fff; box-shadow:0 2px 14px rgba(0,0,0,.12); }
+    header { border-bottom:2px solid var(--accent); padding-bottom:8px; margin-bottom:10px; }
+    h1 { margin:0; font-size:24pt; letter-spacing:-.6px; }
+    .identity { margin-top:3px; color:var(--accent); font-weight:700; font-size:10.5pt; }
+    .contact { margin-top:5px; color:var(--muted); font-size:8.7pt; }
+    a { color:inherit; text-decoration:none; }
+    .evidence a { color:var(--accent); text-decoration:underline; }
+    h2 { margin:10px 0 5px; padding-bottom:2px; border-bottom:1px solid var(--rule); color:var(--accent); font-size:10.5pt; text-transform:uppercase; letter-spacing:1px; }
+    h3 { margin:7px 0 2px; font-size:9.5pt; }
+    p { margin:3px 0; }
+    ul { margin:3px 0 6px 16px; padding:0; }
+    li { margin:2px 0; }
+    .row { display:flex; justify-content:space-between; gap:14px; align-items:baseline; }
+    .row > :first-child { min-width:0; }
+    .dates { color:var(--muted); white-space:nowrap; font-size:8.7pt; }
+    .place { font-weight:700; }
+    .subtle { color:var(--muted); }
+    .pub { margin:0 0 6px; padding-left:14px; text-indent:-14px; }
+    .skills { display:grid; grid-template-columns:120px 1fr; column-gap:9px; row-gap:3px; }
+    .skills strong { color:#24343b; }
+    .page-break { break-before:page; page-break-before:always; }
+    .avoid-break { break-inside:avoid; page-break-inside:avoid; }
+    footer { margin-top:12px; text-align:center; color:var(--muted); font-size:8pt; }
+    @media print {
+      body { background:#fff; }
+      main { width:auto; margin:0; padding:0; box-shadow:none; }
+      a { color:inherit; }
+    }
+    @media screen and (max-width:850px) {
+      main { width:100%; margin:0; padding:28px 24px; box-shadow:none; }
+      .row { display:block; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sahiti Bommareddy</h1>
+    <div class="identity">AI Agent Platforms · Distributed Systems · Resilient Critical Infrastructure</div>
+    <div class="contact">
+      <a href="mailto:b.sahiti@gmail.com">b.sahiti@gmail.com</a> ·
+      <a href="tel:+14047861767">404-786-1767</a> ·
+      <a href="https://www.linkedin.com/in/bsahiti/">linkedin.com/in/bsahiti</a> ·
+      <a href="https://github.com/b-sahiti">github.com/b-sahiti</a> ·
+      <a href="https://b-sahiti.github.io">b-sahiti.github.io</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    <div class="row"><div><strong>Ph.D., Computer Science</strong>, Johns Hopkins University, Baltimore, MD</div><div class="dates">2019–2025</div></div>
+    <p class="subtle evidence">Advisor: Yair Amir · Dissertation: <a href="https://www.cs.jhu.edu/~yairamir/SahitiBommareddy_PhD_Thesis.pdf"><em>Real-Time Byzantine-Resilient Power Grid Infrastructure</em></a></p>
+    <div class="row"><div><strong>M.S., Computer Science</strong>, Duke University, Durham, NC</div><div class="dates">2017–2019</div></div>
+    <div class="row"><div><strong>B.Tech., Electronics &amp; Communication Engineering</strong>, Jawaharlal Nehru Technological University, Hyderabad, India</div><div class="dates">2007–2011</div></div>
+  </section>
+
+  <section>
+    <h2>Research &amp; Technical Profile</h2>
+    <p>Agent product-platform architecture and resilient distributed systems, with emphasis on production AI agents, governed external-action execution, workflow orchestration, Byzantine fault tolerance, intrusion tolerance, real-time systems, cybersecurity, resilient networking, and machine-learning-based intrusion detection for critical infrastructure.</p>
+  </section>
+
+  <section>
+    <h2>Professional &amp; Research Experience</h2>
+    <div class="avoid-break">
+      <div class="row"><div><span class="place">Ema</span> — <strong>Software Engineer</strong></div><div class="dates">Feb 2025–Present</div></div>
+      <ul>
+        <li>Own major areas of Ema's integrations and external-actions platform and designed the agent that turns API specifications, documentation, MCP servers, and other system descriptions into validated, test-run, publishable tools without hand-written integration code.</li>
+        <li>Designed Ema's multi-tool planning and execution agent and drove shared agent-harness capabilities spanning planning and replanning, dependency resolution, validation, evaluation, safeguards, and configurable human approval.</li>
+        <li>Designed governed tool execution with isolated runtimes, sandboxing, network restrictions, identity boundaries, credential isolation, recovery controls, and per-call auditability.</li>
+        <li>Owned event-driven and long-running execution across schedules, webhooks, polling, dynamic workflows, durable state, deduplication, re-drive, and partial-failure recovery.</li>
+        <li>Designed MCP support and no-code capability creation; drove connector-catalog lifecycle, authentication, permission, CI/CD, quality, and distribution capabilities.</li>
+        <li>Set technical direction through architecture reviews, closely mentored three engineers, and coordinated delivery across more than 15 geographically distributed engineers.</li>
+        <li>Developed production observability and structured failure attribution across agent execution, reducing detection and resolution time by more than 70%.</li>
+      </ul>
+    </div>
+
+    <div class="avoid-break">
+      <div class="row"><div><span class="place">Johns Hopkins University</span> — <strong>Doctoral Researcher, Distributed Systems and Networks Lab</strong></div><div class="dates">2019–2025</div></div>
+      <ul>
+        <li>Designed and built real-time distributed systems for critical-infrastructure protection, including power-grid substations, combining Byzantine fault-tolerant replication, resilient networking, and proactive recovery.</li>
+        <li>Developed cybersecurity and machine-learning capabilities for network intrusion detection and situational awareness integrated with resilient control systems.</li>
+        <li>Developed methods for analyzing and tolerating compound cyber and physical threats to critical-infrastructure control systems; research received the IEEE SRDS 2024 Best Paper Award.</li>
+        <li>Co-created Spire and contributed to Prime and Spines; delivered resilient-system research for national-laboratory and major power-grid-vendor deployment environments.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-break evidence">
+    <h2>Peer-Reviewed Publications</h2>
+    <p class="pub"><strong>Sahiti Bommareddy</strong>, Maher Khan, Huzaifah Nadeem, Benjamin Gilby, Imes Chiu, John W. van de Lindt, Omar Nofal, Mathaios Panteli, Linon Wells II, Yair Amir, and Amy Babay. “<a href="https://jhu-dsn.github.io/papers/srds24_compoundThreats.pdf">Tolerating Compound Threats in Critical Infrastructure Control Systems</a>.” <em>IEEE Symposium on Reliable Distributed Systems (SRDS)</em>, 2024. <strong>Best Paper Award.</strong></p>
+    <p class="pub">Christopher Bonebrake, Jonathan Sebastian-Cardenas, Carl H. Miller, <strong>Sahiti Bommareddy</strong>, Yair Amir, Kade Cornelison, Cliff Eyre, Paul Skare, Sri Nikhil Gupta Gourisetti, Aditya Ashok, and Bev Johnson. “<a href="https://jhu-dsn.github.io/papers/ByzSec_ieee.pdf">ByzSec—A Multi-layered Byzantine Resilient Architecture for Bulk Power System Protective Relays</a>.” <em>IEEE Power &amp; Energy Society General Meeting</em>, 2024.</p>
+    <p class="pub"><strong>Sahiti Bommareddy</strong>, Maher Khan, David J. Sebastian Cardenas, Carl Miller, Christopher Bonebrake, Yair Amir, and Amy Babay. “<a href="https://lab-dsn.github.io/papers/RTbyz_ERSA2022.pdf">Real-Time Byzantine Resilient Power Grid Infrastructure: Evaluation and Trade-offs</a>.” <em>Workshop on Engineering of Reliable, Secure and Adaptive Systems at IEEE RTSS</em>, 2022.</p>
+    <p class="pub"><strong>Sahiti Bommareddy</strong>, Daniel Qian, Christopher Bonebrake, Paul Skare, and Yair Amir. “<a href="https://lab-dsn.github.io/papers/RealTime.pdf">Real-Time Byzantine Resilience for Power Grid Substations</a>.” <em>IEEE Symposium on Reliable Distributed Systems (SRDS)</em>, 2022.</p>
+    <p class="pub"><strong>Sahiti Bommareddy</strong>, Benjamin Gilby, Maher Khan, Imes Chiu, Mathaios Panteli, John W. van de Lindt, Yair Amir, and Amy Babay. “<a href="https://lab-dsn.github.io/papers/dcds2022.pdf">Data-Centric Analysis of Compound Threats to Critical Infrastructure Control Systems</a>.” <em>Workshop on Data-Centric Dependability and Security at IEEE/IFIP DSN</em>, 2021.</p>
+  </section>
+
+  <section class="evidence">
+    <h2>Open-Source Systems</h2>
+    <div class="avoid-break">
+      <h3><a href="https://github.com/spire-resilient-systems/spire">Spire</a> — Co-creator</h3>
+      <p>Open-source intrusion-tolerant SCADA and substation-protection system engineered to withstand system- and network-level compromise while meeting power-grid timing requirements, including 100–200 ms control-center updates and 4.167 ms autonomous substation-protection actions.</p>
+      <ul>
+        <li><strong>Spire 1.3:</strong> Optimized transaction latency by approximately 3× and integrated machine-learning-based network intrusion detection.</li>
+        <li><strong>Spire 2.0:</strong> Developed the first real-time Byzantine-resilient protection system for power-grid substations; delivered it for deployment at Pacific Northwest National Laboratory, Siemens, GE, and Hitachi Energy, and supported adversarial red-team evaluation by Sandia National Laboratories.</li>
+        <li><strong>Spire 2.1:</strong> Added reconfiguration capabilities to sustain operation under compound cyber and physical threats.</li>
+      </ul>
+    </div>
+    <div class="avoid-break">
+      <h3><a href="https://github.com/jhu-dsn/prime">Prime</a> — Contributor</h3>
+      <p>Intrusion-tolerant replication engine implementing Byzantine fault-tolerant replication with performance guarantees under attack and reconfiguration for enhanced resilience.</p>
+    </div>
+    <div class="avoid-break">
+      <h3><a href="https://github.com/spines-org/spines">Spines</a> — Contributor</h3>
+      <p>Resilient overlay-messaging infrastructure providing automatic reconfiguration and network flexibility for research and production deployments with demanding latency, reliability, and resilience requirements.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <strong>Agent platforms</strong><span>Agent building, agent harness, multi-tool planning and execution, workflow orchestration, MCP, governed tool execution, evaluation, human-in-the-loop</span>
+      <strong>Distributed systems</strong><span>Byzantine fault tolerance, intrusion tolerance, real-time systems, event-driven execution, durable state, idempotency, recovery, resilient networking</span>
+      <strong>Security</strong><span>Sandboxing, network restrictions, enterprise authentication, OAuth2, API keys, mTLS, credential lifecycle, permission scoping, audit</span>
+      <strong>Languages &amp; systems</strong><span>Python, Go, TypeScript, C, Java, SQL/PostgreSQL, REST/OpenAPI, Prometheus, Grafana, ClickHouse, Git, Linux</span>
+      <strong>Machine learning</strong><span>PyTorch, TensorFlow, Hugging Face, NumPy, Pandas, intrusion detection, time-series and regression models</span>
+      <strong>Research tools</strong><span>Mininet, Apache Spark, HP LoadRunner, HP Performance Center</span>
+      <strong>Operating systems</strong><span>Linux and UNIX environments including CentOS, Ubuntu, Kali, and AlmaLinux; Windows</span>
+      <strong>Development tools</strong><span>Git, Vim, Visual Studio Code</span>
+    </div>
+  </section>
+
+  <section class="page-break">
+    <h2>Prior Industry Experience</h2>
+    <div class="avoid-break">
+      <div class="row"><div><span class="place">Aktrix Technologies</span> — <strong>Software Engineer</strong>, Hyderabad, India</div><div class="dates">2013–2016</div></div>
+      <ul>
+        <li>Led and expanded a team of nine performance engineers, overseeing test strategy, resource coordination, delivery risk, and training across client projects.</li>
+        <li>Developed an automated performance-monitoring and analysis platform for multi-cloud environments, expanding data-mining and machine-learning analysis while reducing maintenance cost and root-cause-analysis time.</li>
+        <li>Built and maintained data pipelines for extracting and cleaning cloud-monitoring and log data; performed feature engineering, model training, and production performance monitoring.</li>
+        <li>Developed load and resource-utilization prediction using ARIMA and SARIMA time-series models, decision trees, random forests, XGBoost, regression methods, and deep-learning models.</li>
+        <li>Improved latency by approximately 2–5× across projects while reducing root-cause-analysis effort and maintenance costs.</li>
+      </ul>
+    </div>
+    <div class="avoid-break">
+      <div class="row"><div><span class="place">Deloitte</span> — <strong>Performance Engineering Analyst</strong>, Hyderabad, India</div><div class="dates">2011–2012</div></div>
+      <ul>
+        <li>Led performance testing across seven projects and developed approximately 40 performance-test plans for geo-distributed systems.</li>
+        <li>Evaluated application performance and network traffic, built monitoring-data pipelines, and analyzed server, network, and resource-utilization data to identify performance bottlenecks.</li>
+        <li>Partnered with product owners and application, database, and infrastructure teams to diagnose bottlenecks and optimize transaction latency against service-level objectives.</li>
+        <li>Received the Applause Award for performance optimization and root-cause analysis.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Teaching Experience</h2>
+    <div class="row"><div><strong>Machine Learning</strong>, Johns Hopkins University — Teaching Assistant</div><div class="dates">Fall 2024</div></div>
+    <div class="row"><div><strong>Advanced Distributed Systems</strong>, Johns Hopkins University — Teaching Assistant</div><div class="dates">Spring 2022</div></div>
+    <div class="row"><div><strong>Distributed Systems</strong>, Johns Hopkins University — Special Help</div><div class="dates">Fall 2021</div></div>
+    <div class="row"><div><strong>Software for Resilient Communities</strong>, Johns Hopkins University — Special Help</div><div class="dates">Spring 2021</div></div>
+    <div class="row"><div><strong>Intermediate Programming</strong>, Johns Hopkins University — Special Help</div><div class="dates">Fall 2020</div></div>
+    <div class="row"><div><strong>Distributed Systems</strong>, Johns Hopkins University — Teaching Assistant</div><div class="dates">Fall 2019</div></div>
+    <div class="row"><div><strong>Introduction to Artificial Intelligence</strong>, Duke University — Teaching Assistant</div><div class="dates">Spring 2019</div></div>
+  </section>
+
+  <section>
+    <h2>Selected Academic Projects</h2>
+    <div class="avoid-break"><h3>Fault-Tolerant Distributed Key-Value Store</h3><p>Engineered a sharded, replicated key-value store using the Raft consensus protocol to study consistency, availability, network partitions, and data-distribution trade-offs.</p></div>
+    <div class="avoid-break"><h3>Fair Decision-Making with Privacy-Protected Data</h3><p>Investigated the interaction between fairness and differential privacy, evaluating privacy mechanisms and developing a fairness metric to characterize accuracy and equity trade-offs.</p></div>
+    <div class="avoid-break"><h3>NLP Model Development and Evaluation</h3><p>Developed and evaluated text-classification and generation models, including fine-tuning BERT-family models with Hugging Face Transformers.</p></div>
+    <div class="avoid-break"><h3>Network and Systems Security</h3><p>Conducted hands-on security analysis of networked systems and evaluated attack surfaces including authentication, denial-of-service, rogue access points, and man-in-the-middle attacks.</p></div>
+    <div class="avoid-break"><h3>Fat-Tree Performance Evaluation</h3><p>Built and evaluated Fat-Tree and conventional tree topologies in Mininet, studying the effects of workload placement, scheduling, topology, service-level objectives, and bandwidth utilization.</p></div>
+    <div class="avoid-break"><h3>Haptic Aid for the Visually Challenged</h3><p>Led development of a computational navigation prototype for indoor use, combining ultrasonic sensing, real-time microcontroller processing, and haptic actuators to help visually impaired users perceive obstacles and navigate more independently.</p></div>
+  </section>
+
+  <footer>Full publications, open-source systems, and research materials: b-sahiti.github.io</footer>
+</main>
+</body>
+</html>

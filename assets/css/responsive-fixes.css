@@ -1,0 +1,95 @@
+html,
+body {
+  overflow-x: clip;
+}
+
+.career-bridge {
+  padding: 58px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.portrait > div {
+  background: var(--night);
+  color: #fff;
+  box-shadow: 0 16px 44px rgba(16, 47, 52, 0.22);
+}
+
+.portrait > div a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.portrait > div a:hover {
+  color: #d8f5a0;
+}
+
+.portrait > div span {
+  color: #d1dfdc;
+}
+
+.career-bridge p {
+  max-width: 980px;
+  margin: 0;
+  font: 700 clamp(30px, 4vw, 52px)/1.18 "Manrope", sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.research-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.advisor {
+  margin: 14px 0 0;
+  color: var(--ink) !important;
+  font-size: 16px !important;
+  font-weight: 600;
+}
+
+.advisor a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.advisor a:hover {
+  text-decoration: underline;
+}
+
+.research-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero > div,
+  .portrait {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .career-bridge {
+    padding: 42px 0;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+
+  h1 {
+    font-size: 39px;
+    overflow-wrap: break-word;
+  }
+
+  .lede {
+    font-size: 17px;
+  }
+}
