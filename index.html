@@ -65,11 +65,29 @@
 
     <section id="research" class="section shell">
       <div class="intro"><p class="eyebrow">Research</p><h2>Resilient systems for critical infrastructure.</h2><p>My doctoral work develops real-time distributed systems that preserve correct operation through component compromise, network attacks, and compound cyber-physical threats.</p><p class="advisor">Ph.D. advisor: <a href="https://www.cs.jhu.edu/~yairamir/">Dr. Yair Amir</a></p><a class="research-link" href="https://www.cs.jhu.edu/~yairamir/SahitiBommareddy_PhD_Thesis.pdf">Read my Ph.D. thesis: <em>Real-Time Byzantine-Resilient Power Grid Infrastructure</em> ↗</a></div>
-      <div class="research-cards">
-        <article><span>Real-time systems</span><h3>Byzantine-resilient power-grid protection</h3><p>Fault-tolerant replication, resilient networking, proactive recovery, and situational awareness for critical infrastructure.</p><a href="https://lab-dsn.github.io/papers/RealTime.pdf">Read the paper ↗</a></article>
-        <article><span>Cyber-physical resilience</span><h3>Compound-threat analysis and tolerance</h3><p>Methods for understanding and tolerating coordinated cyberattacks and severe physical disruption.</p><a href="https://jhu-dsn.github.io/papers/srds24_compoundThreats.pdf">Read the Best Paper ↗</a></article>
-        <article><span>Cybersecurity + ML</span><h3>Intrusion detection and situational awareness</h3><p>Machine-learning capabilities integrated with resilient control systems to detect malicious network behavior.</p></article>
+      <div class="case-studies">
+        <article class="case-study">
+          <div class="case-title"><span>01 · Real-time distributed systems</span><h3>Byzantine-resilient power-grid protection</h3><p>Protecting critical grid assets when relays and networks may be compromised—without violating the substation's quarter-cycle response requirement.</p></div>
+          <div class="case-details">
+            <section><h4>Systems challenge</h4><p>A compromised protective relay can fail to isolate a dangerous electrical fault or trip unnecessarily. Either outcome can damage high-value equipment and disrupt power delivery. Traditional Byzantine-resilient systems were not designed for this strict real-time environment.</p></section>
+            <section><h4>Architecture and contribution</h4><p>I developed the architecture and protocols for real-time Byzantine-resilient substation protection, combining diverse replicated relays, resilient networking, proactive recovery, and continuous operation under successful component and network attacks.</p></section>
+            <section><h4>System building and validation</h4><p>This work became part of Spire, an open-source intrusion-tolerant SCADA system. It was delivered for deployment at PNNL and major power-grid vendors including GE, Siemens, and Hitachi Energy, and evaluated through a Sandia National Laboratories red-team exercise.</p></section>
+            <div class="case-links"><a href="https://www.cs.jhu.edu/~yairamir/SahitiBommareddy_PhD_Thesis.pdf">Ph.D. thesis ↗</a><a href="https://lab-dsn.github.io/papers/RealTime.pdf">SRDS paper ↗</a><a href="https://github.com/spire-resilient-systems/spire">Spire source ↗</a></div>
+          </div>
+        </article>
+
+        <article class="case-study">
+          <div class="case-title"><span>02 · Cyber-physical resilience</span><h3>Compound-threat analysis and tolerance</h3><p>Understanding what happens when severe physical disruption is followed by a coordinated cyberattack against already-degraded critical infrastructure.</p></div>
+          <div class="case-details">
+            <section><h4>Systems challenge</h4><p>Natural disasters can damage infrastructure and communications while forcing emergency reconfiguration. A capable attacker can exploit that degraded state, turning individually survivable events into a compound threat with cascading consequences.</p></section>
+            <section><h4>Research contribution</h4><p>I helped define the compound-threat model and developed methods to analyze how cyberattacks interact with physical disruption across control systems, networks, and recovery mechanisms. The work exposed weaknesses in static architectures and motivated more adaptable resilient-system designs.</p></section>
+            <section><h4>From analysis to resilience</h4><p>The research connected data-centric impact analysis with system-level protection and recovery, informing reconfiguration capabilities in Spire and a broader approach to severe-impact-resilient control systems. It received the IEEE SRDS 2024 Best Paper Award.</p></section>
+            <div class="case-links"><a href="https://jhu-dsn.github.io/papers/srds24_compoundThreats.pdf">Best Paper ↗</a><a href="https://lab-dsn.github.io/papers/dcds2022.pdf">Data-centric analysis ↗</a></div>
+          </div>
+        </article>
       </div>
+
+      <aside class="ml-note"><span>Cybersecurity + ML</span><p>I also developed machine-learning-based network intrusion detection and situational-awareness capabilities integrated with resilient control systems.</p><a href="https://jhu-dsn.github.io/courses/cs717-2020/resilientPowerGrid/">View the project ↗</a></aside>
     </section>
 
     <section class="section soft">

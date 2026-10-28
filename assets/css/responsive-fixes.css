@@ -59,6 +59,96 @@ body {
   text-decoration: underline;
 }
 
+.case-studies {
+  display: grid;
+  gap: 28px;
+}
+
+.case-study {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.case-title,
+.case-details {
+  padding: 38px;
+}
+
+.case-title {
+  border-right: 1px solid var(--line);
+  background: #f5f1e8;
+}
+
+.case-title > span,
+.ml-note > span {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-title h3 {
+  margin: 32px 0 18px;
+  font-size: clamp(27px, 3vw, 40px);
+}
+
+.case-title p,
+.case-details p,
+.ml-note p {
+  color: var(--muted);
+}
+
+.case-details section {
+  padding: 0 0 22px;
+  margin: 0 0 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.case-details h4 {
+  margin: 0 0 7px;
+  font: 700 16px "Manrope", sans-serif;
+}
+
+.case-details p {
+  margin: 0;
+}
+
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+
+.case-links a,
+.ml-note a {
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.case-links a:hover,
+.ml-note a:hover {
+  text-decoration: underline;
+}
+
+.ml-note {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 28px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 26px 30px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.ml-note p {
+  margin: 0;
+}
+
 .research-link:hover {
   text-decoration: underline;
 }
@@ -71,6 +161,20 @@ body {
   .hero > div,
   .portrait {
     min-width: 0;
+  }
+
+  .case-study {
+    grid-template-columns: 1fr;
+  }
+
+  .case-title {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .ml-note {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
